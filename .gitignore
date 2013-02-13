@@ -4,4 +4,6 @@
 TAGS
 db/schema.rb
 log/
-db/*.sqlite3
+db/*.sqlite
+.DS_Store
+._.DS_Store
