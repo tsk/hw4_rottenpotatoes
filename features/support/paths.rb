@@ -24,8 +24,11 @@ module NavigationHelpers
     when /^the edit page for "(.*)"/
         "/movies/#{Movie.find_by_title($1).id.to_s}/edit"
 
-    when /^tge Similar Movies page for "(.*)"/
+    when /^the Similar Movies page for "(.*)"/
         "/movies/#{Movie.find_by_title($1).id.to_s}/similar_director"
+
+    when /^the details page for "(.*)"/
+        "/movies/#{Movie.find_by_title($1).id.to_s}"
 
     else
       begin

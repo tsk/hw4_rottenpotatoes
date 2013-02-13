@@ -52,6 +52,11 @@ Then /I should not see any movies/ do
     end
 end
 
+#Given /I am on the details page for "(.*)"/ do |movie|
+#    @movie = Movie.find_by_title(movie)
+#    assert @movie.title == movie
+#end
+
 When /I (un)?check all ratings/ do |uncheck|
     if(uncheck)
         "PG-13,G,R,PG".split(",").each do |rating|
